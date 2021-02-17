@@ -1,0 +1,23 @@
+li span {
+    cursor: pointer;
+    user-select: none;
+}
+
+.del {
+    margin-left: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    color: red;
+}
+
+#verseAdder {
+    display: inline-block;
+    width: 20%;
+}
+#verseCont {
+    display: inline-block;
+    float: right;
+    width: 75%;
+    border-left: 2px solid grey;
+    padding-left: 20px;
+}

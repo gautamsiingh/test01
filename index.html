@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>DOM</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <div id="actions">
+                <input id="itemField" type="text" placeholder="Enter here...">
+                <button id="addButton" onclick="addItem()">Add Item</button>
+                <p id="message"></p>
+            </div>
+
+            <div id="list">
+                <h3>List <span id="count"></span></h3>
+                <ul>
+                    <li>Banana <span class="del" onclick="delItem(this)">X</span></li>
+                    <li>Grapes <span class="del" onclick="delItem(this)">X</span></li>
+                    <li>Mango <span class="del" onclick="delItem(this)">X</span></li>                    
+                </ul>
+            </div>
+            <hr>
+            
+            <div id="verseBox">
+                <div id="verseAdder">
+                    <label for="verseTitleField">Enter Verse Title</label>
+                    <br>
+                    <input type="text" id="verseTitleField">
+                    <br>
+                    <br>
+                    <label for="verseTextField">Enter Verse Text</label>
+                    <br>
+                    <textarea id="verseTextField" rows="6"></textarea>
+                    <br>
+                    <br>
+                    <button id="addVerseButton" onclick="addVerse()">Add Verse</button>
+                    <p id="verseMsg"></p>
+                </div>
+                <div id="verseCont">
+                    <button id="prev" onclick="changeVerse('prev')">Previous Verse</button>
+                    <button id="next" onclick="changeVerse('next')">Next Verse</button>
+                    <input type="text" placeholder="Search here..." id="searchText">
+                    <button id="searchButton" onclick="searchFunc()">Search</button>
+                    <p id="searchMsg"></p>
+                    <p>Total number of verses = <span id="verseCount"></span></p>
+                    <h2 id="title"></h2>
+                    <p id="verseText"></p>
+                </div>
+            </div>
+        </div>
+        <script src="custom.js">    
+    </body>
+</html>
